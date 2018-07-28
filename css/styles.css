@@ -1,11 +1,33 @@
-/*GLOBAl  */
-h1,h2,h3,h4,h5,h6 {
+/*Global Styles */
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   margin-top: 10px;
 }
 
-/* NAV BAR */
+h2 {
+  font-size:2.2em;
+  line-height:1.3em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  font-size:1em;
+}
+
+.fab, .far, .fas {
+  font-size:30px;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.color-text-white {
+  color:#ffffff;
+}
+
+/* Nav bar styles */
+
 .navbar {
   margin-bottom:0;
   border-radius:0;
@@ -29,21 +51,21 @@ h1,h2,h3,h4,h5,h6 {
 .navbar-brand h1:hover {
   color:#c72c72;
 }
-/* HOMEPAGE JUMBOTRON */
-.jumbotron {
-  margn-bottom:0;
-}
+
+/* Homepage Jumbotron styles */
 
 .home-jumbotron {
-  background: rgb(36,151,163)
+  background: rgb(36,151,163);
+  margin-bottom:0px;
   padding-top:40px;
   padding-bottom:40px;
   display: flex;
   align-items: center;
-  text-align-center;
-
+  /* text-align-center; */
 }
-/*FOOTER   */
+
+/*Footer section styles  */
+
 .footer-section {
   background:#030116;
   padding-top:60px;
@@ -55,30 +77,30 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-.footer-social a {
+
+.footer-section a {
   color:#c72c72;
+  text-decoration: none;
 }
 
-.footer-social a:hover {
+.footer-section a:hover {
   color:#ffffff;
 }
 
 /* SM SCREEN */
-@media (min-width:768px) {
+
+@media only screen and (min-width:768px) {
   .home-jumbotron {
-    height:100vh;
-    min-height:
-    text-align:left;
+    min-height: calc(100vh-50px);
   }
-
-
 }
 
 /* MD SCREEN */
-@media (min-width:992px) {
-.home-jumbotron {
-  text-align: left;
-}
+
+@media only screen and (min-width:992px) {
+  .home-jumbotron {
+    text-align: left;
+  }
 
   .home-jumbo-tron-left {
     padding-top:100px;
@@ -86,11 +108,16 @@ h1,h2,h3,h4,h5,h6 {
   .footer-social {
     text-align: left;
   }
-
 }
 /* LG SCREEN */
-@media (min-width:1200px) {
-  .footer-social {
+
+@media only screen and (min-width:1200px) {
+  .home-jumbotron-left {
+    padding-top:100px;
+  }
+}
+
+  /* .footer-social {
     text-align: left;
 
-}
+} */
